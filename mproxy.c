@@ -451,7 +451,7 @@ int send_data(int socket,char * buffer,int len)
         int i;
         for(i = 0; i < len ; i++)
         {
-            buffer[i] ^= 1;
+            buffer[i] ^= 91;
            
         }
     }
@@ -467,7 +467,7 @@ int receive_data(int socket, char * buffer, int len)
         int i; 
         for(i = 0; i< n; i++ )
         {
-            buffer[i] ^= 1;
+            buffer[i] ^= 91;
             // printf("%d => %d\n",c,buffer[i]);
         }
     }
